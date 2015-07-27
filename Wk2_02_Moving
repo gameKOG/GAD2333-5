@@ -1,0 +1,47 @@
+	using UnityEngine;
+using System.Collections;
+
+public class Moving : MonoBehaviour {
+
+	public int speed =30;
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () 
+	{
+		
+		if (Input.GetKey (KeyCode.RightArrow)) {
+			Vector3 position = this.transform.position;
+			position.x+= speed * Time.deltaTime;
+			this.transform.position = position;
+		}
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			Vector3 position = this.transform.position;
+			position.x-= speed * Time.deltaTime;
+			this.transform.position = position;
+		}
+		if (Input.GetKey (KeyCode.UpArrow)) {
+			Vector3 position = this.transform.position;
+			position.z+= speed * Time.deltaTime;
+			this.transform.position = position;
+		}
+		if (Input.GetKey (KeyCode.DownArrow)) {
+			Vector3 position = this.transform.position;
+			position.z-= speed * Time.deltaTime;
+			this.transform.position = position;
+		}
+		if (Input.GetKey (KeyCode.M)) {
+			Vector3 position = this.transform.position;
+			position.y+= speed * Time.deltaTime;
+			this.transform.position = position;
+		}
+		if (Input.GetKey (KeyCode.N)) {
+			Vector3 position = this.transform.position;
+			position.y-= speed * Time.deltaTime;
+			this.transform.position = position;
+		}
+	}
+}
