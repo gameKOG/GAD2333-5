@@ -1,0 +1,16 @@
+using UnityEngine;
+using System.Collections;
+
+public class Wk001 : MonoBehaviour {
+
+	public string Name1 = " Keanu Rendon ";
+
+	public string Name2 = " Rendon ";
+
+	public void Main()
+	{
+		  print ("Say Hello"  +Name1);
+
+		  print ("SayGoodbye" +Name2);
+	}
+}
