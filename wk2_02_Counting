@@ -1,0 +1,24 @@
+using UnityEngine;
+using System.Collections;
+
+public class counting : MonoBehaviour 
+{
+	
+	public string Sentence = "'Possesses' posseses a great number of s's.";
+	
+	
+	// Use this for initialization
+	void Start () {
+		
+		int sCount = 0;
+		for( int c = 0; c < Sentence.Length; c++ ) if ( Sentence[c]=='s' ) sCount++;    
+		print( " the letter s appears in this sentence " + sCount + " times." );
+	}
+	
+	
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
