@@ -14,3 +14,13 @@ public class Wk001 : MonoBehaviour {
 		  print ("SayGoodbye" +Name2);
 	}
 }
+
+
+/*Not quite on this one. The one rule was that you had to use the function Main, as shown in the instructions. It was designed for you to pass the name data from one function to another. You left that out.
+
+public void Main()
+	{
+	SayHello("Name");
+	SayGoodbye();
+	}
+*/
