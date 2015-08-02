@@ -4,7 +4,8 @@ using System.Collections;
 public class counting : MonoBehaviour 
 {
 	
-	public string Sentence = "'Possesses' posseses a great number of s's.";
+	public string Sentence = "'Possesses' posseses a great number of s's.";//You left an s out of the second 'possesses'.
+										//So your count was one short.
 	
 	
 	// Use this for initialization
